@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-copper: #a8552e;
+  --color-golden: #d8a24a;
+  --color-sage: #3f6b66;
+  --color-cream: #f7f1e6;
+  --color-charcoal: #2b2622;
+  --color-clay: #ead8c0;
+  --color-mist: #fdf9f2;
+
+  --font-sans: 'Nunito Sans', sans-serif;
+  --font-display: 'Fraunces', serif;
+
+  --shadow-card: 0 18px 40px rgba(63, 107, 102, 0.12);
+  --shadow-warm: 0 16px 32px rgba(168, 85, 46, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at top left, rgba(216, 162, 74, 0.2), transparent 28%),
+    linear-gradient(180deg, #fdf9f2 0%, #f7f1e6 55%, #f1e7d7 100%);
+  color: var(--color-charcoal);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a,
+button {
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-golden);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
