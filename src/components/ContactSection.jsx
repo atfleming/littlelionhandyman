@@ -81,10 +81,6 @@ function ContactSection() {
             </div>
           </div>
 
-          <div className="max-w-md text-sm leading-7 text-cream/72">
-            {/* Optional upgrade: replace this contact block with a Formspree-powered form once the endpoint is chosen. */}
-            A simple contact form can drop in here later if you want lead capture beyond call, text, and email.
-          </div>
         </div>
       </div>
     </section>
