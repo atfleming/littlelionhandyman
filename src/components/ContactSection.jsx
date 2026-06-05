@@ -13,8 +13,8 @@ const contactLinks = [
   },
   {
     label: 'Email',
-    href: 'mailto:replace-with-real-email@example.com',
-    detail: 'Swap in the real business email address',
+    href: 'mailto:littlelionbighelp@gmail.com',
+    detail: 'littlelionbighelp@gmail.com',
   },
 ]
 
