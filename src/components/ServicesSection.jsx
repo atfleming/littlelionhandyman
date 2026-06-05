@@ -66,6 +66,16 @@ function ServicesSection() {
           ))}
         </div>
 
+        <Reveal className="mt-8">
+          <div className="overflow-hidden rounded-[2rem] shadow-card">
+            <img
+              src="/images/pressure_washing_1.PNG"
+              alt="Before and after deck pressure washing — dark weathered boards restored to clean warm wood"
+              className="w-full object-cover"
+            />
+          </div>
+        </Reveal>
+
       </div>
     </section>
   )
