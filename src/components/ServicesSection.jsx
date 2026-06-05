@@ -68,11 +68,17 @@ function ServicesSection() {
 
         <Reveal className="mt-8">
           <div className="overflow-hidden rounded-[2rem] shadow-card">
-            <img
-              src="/images/pressure_washing_1.PNG"
-              alt="Before and after deck pressure washing — dark weathered boards restored to clean warm wood"
-              className="w-full object-cover"
-            />
+            <picture>
+              <source srcSet="/images/pressure-washing-1.webp" type="image/webp" />
+              <img
+                src="/images/pressure_washing_1.PNG"
+                alt="Before and after deck pressure washing — dark weathered boards restored to clean warm wood"
+                className="w-full object-cover"
+                width="1400"
+                height="933"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </Reveal>
 

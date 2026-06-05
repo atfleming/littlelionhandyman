@@ -21,11 +21,16 @@ function HeroSection() {
             transition={heroTransition}
             className="relative z-10"
           >
-            <img
-              src="/images/logo.PNG"
-              alt="Little Lion · Big Help — Neighborhood Handyman"
-              className="mb-6 w-56 mix-blend-multiply"
-            />
+            <picture>
+              <source srcSet="/images/logo.webp" type="image/webp" />
+              <img
+                src="/images/logo.PNG"
+                alt="Little Lion · Big Help — Neighborhood Handyman"
+                className="mb-6 w-56 mix-blend-multiply"
+                width="500"
+                height="280"
+              />
+            </picture>
             <p className="mb-3 text-base font-semibold text-copper">Hi, I'm Jeremy.</p>
             <h1
               id="hero-heading"
@@ -79,12 +84,17 @@ function HeroSection() {
             className="mt-8 lg:mt-0"
           >
             <div className="overflow-hidden rounded-[2rem] shadow-card min-h-[22rem]">
-              <img
-                src="/images/portrait%20with%20sam.PNG"
-                alt="The handyman with Sam the golden retriever"
-                className="h-full w-full object-cover object-center"
-                style={{ minHeight: '22rem' }}
-              />
+              <picture>
+                <source srcSet="/images/portrait-with-sam.webp" type="image/webp" />
+                <img
+                  src="/images/portrait with sam.PNG"
+                  alt="The handyman with Sam the golden retriever"
+                  className="h-full w-full object-cover object-center"
+                  style={{ minHeight: '22rem' }}
+                  width="900"
+                  height="1125"
+                />
+              </picture>
             </div>
           </motion.div>
         </div>
